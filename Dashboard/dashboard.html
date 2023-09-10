@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Html CRUD with Pure JavaScript</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../Dashboard/dashboard.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="container navbar-nav d-flex justify-content-between mb-2 mb-lg-0 w-100">
+                    <div class="">
+                        <a class="nav-link fw-bold text-white">SMIT Attendance App</a>
+                    </div>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid bg-white saa-nav">
+        <div class="container">
+            <h3 class="fw-bold">Admin Dashboard</h3>
+        </div>
+    </div>
+
+<div class="form-container">
+    <form class="form" onsubmit="event.preventDefault(); onFormSubmit();" autocomplete="off">
+        <div>
+            <label>Class timings*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+            <input type="text" name="fullName" id="Timing">
+        </div>
+        <div>
+            <label>Schedule of classes*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+            <input type="text" name="empCode" id="Schedule">
+        </div>
+        <div>
+            <label>Teacher's name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+            <input type="text" name="salary" id="TeacherName">
+        </div>
+        <div>
+            <label>Section name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+            <input type="text" name="city" id="Section">
+        </div>
+        <div>
+            <label>Course Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+            <input type="text" name="city" id="Course">
+        </div>
+        <div>
+            <label>Batch Number*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+            <input type="text" name="city" id="batch">
+        </div>
+        <div class="form-action-buttons">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+
+    <table class="list" id="employeeList">
+        <thead>
+            <tr>
+                <th>Full Name</th>
+                <th>EMP Code</th>
+                <th>Salary</th>
+                <th>City</th>
+                <th>name</th>
+                <th>batch</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+
+<div class="form-container">
+    <form class="form" onsubmit="event.preventDefault(); onFormSubmit();" autocomplete="off">
+        <div>
+            <label>Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+            <input type="text" name="fullName" id="name">
+        </div>
+        <div>
+            <label>Father Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+            <input type="text" name="empCode" id="empCode">
+        </div>
+        <div>
+            <label>Roll No*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+            <input type="text" name="salary" id="salary">
+        </div>
+        <div>
+            <label>Contact No*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+            <input type="text" name="city" id="city">
+        </div>
+        <div>
+            <label>CNIC*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+            <input type="text" name="city" id="city">
+        </div>
+        <div class="mb-3">
+            <label for="img" style="display: flex; align-items: center; gap: 10px;">
+                <img src="https://img.freepik.com/free-icon/user_318-150864.jpg" width="30px">
+                <i style="margin: 0; color: #1616168a;">Select Profile Photo</i>
+            </label>
+            <input type="file" placeholder="img" class="form-control" id="img" style="display: none;">
+        </div>
+        <div class="form-action-buttons">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+
+    <table class="list" id="employeeList">
+        <thead>
+            <tr>
+                <th>Full Name</th>
+                <th>EMP Code</th>
+                <th>Salary</th>
+                <th>City</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+
+
+<div class="container-fluid bg-white saa-nav">
+    <div class="container">
+        <h3 class="fw-bold">Attendance</h3>
+    </div>
+</div>
+
+<div class="attendance">
+<table class="list" id="attendanceList">
+    <thead>
+        <tr>
+            <th>Roll Number</th>
+            <th>Course</th>
+            <th>Status</th>
+            <th>Timestamp</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+</div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+    <!-- Include Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore-compat.js"></script>
+
+    <script src="../Dashboard/dashboard.js"></script>
+</body>
+</html>

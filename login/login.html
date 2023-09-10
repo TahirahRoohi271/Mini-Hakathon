@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+
+    <!-- Bootstrap CSS-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="container navbar-nav d-flex justify-content-between mb-2 mb-lg-0 w-100">
+                    <div class="">
+                        <a class="nav-link fw-bold text-white">SMIT Attendance App</a>
+                    </div>
+                    <div class="">
+                        <a class="nav-link text-white cursor" onclick="location.replace('../signup/signup.html')">Sign Up</a>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid bg-white saa-nav">
+        <div class="container">
+            <h3 class="fw-bold">Login</h3>
+        </div>
+    </div>
+    <div class="container ">
+        <div class="row" style="margin-top: 80px;">
+            <div class="col-lg-4 mx-auto my-auto  d-flex align-items-center justify-content-center shadow p-3 mb-5 bg-body rounded"
+                style="min-height: 260px; width: 449px;">
+                <div class="">
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Email" id="email"
+                            aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" class="form-control" placeholder="Password" id="pass">
+                    </div>
+                    <div class="mb-3 d-flex justify-content-center">
+                        <button type="submit" class="signup" id="loginBtn"
+                            style="background-color: #7749F8;">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <!-- <script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script> -->
+    <!-- <script src='sweetalert2.all.min.js'></script> -->
+
+    <script type="module" src="./login.js"></script>
+
+</body>
+</html>

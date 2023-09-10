@@ -1,0 +1,184 @@
+/* Reset some default browser styles */
+body, table, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+nav {
+    background: #7749F8;
+}
+
+.form-control:focus {
+    border-color: #7749F8;
+    box-shadow: none;
+}
+
+.saa-nav {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom styling for the select element */
+select#fullName {
+    /* Set a custom font family and font size */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+
+    /* Add padding and border */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+    /* Set a custom background and text color */
+    background-color: #f5f5f5;
+    color: #333;
+
+    /* Define a custom arrow icon using a background image */
+    background-image: url('arrow-down.png'); /* Replace with your arrow icon */
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 20px 20px;
+
+    /* Adjust the width of the select element */
+    width: 100%;
+
+    /* Style the hover and focus states */
+    transition: border-color 0.2s;
+}
+
+/* Style the hover state */
+select#fullName:hover {
+    border-color: #666;
+}
+
+/* Style the focus state */
+select:focus {
+    outline: none;
+    border-color: #007bff; /* Change to your desired focus color */
+    box-shadow: 0 0 3px rgba(0, 123, 255, 0.5); /* Add a subtle box shadow on focus */
+}
+
+.form-container{
+margin: auto;
+width: 100%;
+padding: 10px;
+}
+
+
+.form {
+    /* height: 100vh; Adjust the height as needed */
+    width: 100%;
+    margin-top: 10px;
+    background-color: #fefeff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.attendance{
+    margin: 15px;
+}
+
+table {
+    margin-top: 0;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #7749F8;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #e0e0e0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-action-buttons {
+    text-align: center;
+    margin-top: 10px;
+}
+
+input[type="submit"] {
+    background-color: #7749F8;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.validation-error {
+    color: red;
+    font-size: 12px;
+}
+
+/* Hide validation errors by default */
+.validation-error.hide {
+    display: none;
+}
+
+/* CSS for the container that holds all three sections */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Create three equal-width columns */
+    grid-gap: 20px; /* Add some spacing between columns */
+}
+
+/* CSS for the first form container */
+.form-container {
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+/* CSS for the second form container */
+.form-container2 {
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+/* CSS for the display data section */
+.displayData {
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+/* Additional styling for the form elements within form-container and form-container2 */
+.form-container input,
+.form-container2 input {
+    width: 100%;
+    margin-bottom: 10px;
+}

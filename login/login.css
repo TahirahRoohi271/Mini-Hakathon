@@ -1,0 +1,39 @@
+body {
+    background: #F3F4F6;
+}
+
+nav {
+    background: #7749F8;
+}
+
+.signup {
+    background: #7749F8;
+    color: white;
+    border: none;
+    width: 87px;
+    height: 38px;
+    border-radius: 6px;
+    gap: 8px;
+    transition: 0.4s;
+    outline: none;
+
+}
+
+.signup:hover {
+    background: #5227CC;
+}
+
+.form-control:focus {
+    border-color: #7749F8;
+        box-shadow: none;
+}
+
+.saa-nav {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.cursor{
+    cursor: pointer;
+}

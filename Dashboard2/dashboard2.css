@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+nav {
+    background: #7749F8;
+}
+
+.form-control:focus {
+    border-color: #7749F8;
+    box-shadow: none;
+}
+
+.saa-nav {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the course form container */
+.course-form {
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 70px;
+    width: 30%;
+    padding: 10px;
+  }
+  
+  /* Style for the course select element */
+  #courseStatus {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the attendance form container */
+  .attendance-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style for the roll number input */
+  #rollNumber {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the attendance status select element */
+  #attendanceStatus {
+    background-color: #fff;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the mark attendance button */
+  #markAttendance {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #7749F8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    right: -28%;
+  }
+
+  
+  /* Style for the student data container */
+  #studentData {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
